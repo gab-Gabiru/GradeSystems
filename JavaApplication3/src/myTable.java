@@ -1,4 +1,6 @@
 
+import java.awt.Desktop;
+import java.net.URL;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -116,6 +118,11 @@ public void addRow() {
 
         jLabel20.setForeground(new java.awt.Color(51, 0, 0));
         jLabel20.setText("https://r.mtdv.me/donate-smamak");
+        jLabel20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel20MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -472,6 +479,15 @@ public void addRow() {
     private void emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_emailActionPerformed
+
+    private void jLabel20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel20MouseClicked
+        // TODO add your handling code here:
+        try{
+            Desktop.getDesktop().browse(new URL("https://r.mtdv.me/donate-smamak").toURI());
+        }
+        catch(Exception e){
+        }
+    }//GEN-LAST:event_jLabel20MouseClicked
 
     /**
      * @param args the command line arguments
