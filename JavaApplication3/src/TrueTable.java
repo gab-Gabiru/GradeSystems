@@ -51,7 +51,7 @@ public void addRow(Object[] rowData) {
 
             },
             new String [] {
-                "Name", "Email", "ID", "Course", "Address", "Contact", "Nationality", "Sex", "Religion"
+                "Name", "Email", "ID", "Course", "Address", "Contact", "Nationality", "Sex", "Religion", "Grade"
             }
         ));
         jScrollPane1.setViewportView(jTable1);

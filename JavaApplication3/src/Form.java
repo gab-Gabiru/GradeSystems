@@ -62,7 +62,7 @@ public class Form extends javax.swing.JFrame {
         Email.setBackground(new java.awt.Color(204, 204, 255));
         Email.setFont(new java.awt.Font("Segoe UI", 2, 14)); // NOI18N
         Email.setForeground(new java.awt.Color(255, 255, 255));
-        Email.setText("Enter Email Address");
+        Email.setText("Enter Email Address/Username");
         Email.setBorder(null);
         Email.setCaretColor(new java.awt.Color(255, 255, 255));
         Email.setDisabledTextColor(new java.awt.Color(255, 255, 255));
@@ -80,7 +80,7 @@ public class Form extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Email Address:");
+        jLabel4.setText("Email Address/Username");
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -118,13 +118,16 @@ public class Form extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(142, 142, 142)
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(176, 176, 176))
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(42, 42, 42)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(142, 142, 142)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(96, 96, 96))
+                        .addComponent(Login, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
                                 .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -139,11 +142,7 @@ public class Form extends javax.swing.JFrame {
                             .addComponent(password)
                             .addComponent(jSeparator1)
                             .addComponent(jSeparator2))
-                        .addGap(21, 21, 21))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(63, 63, 63)
-                        .addComponent(Login, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(80, 80, 80))
+                        .addGap(101, 101, 101))))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -164,9 +163,9 @@ public class Form extends javax.swing.JFrame {
                 .addComponent(password, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.DEFAULT_SIZE, 10, Short.MAX_VALUE)
-                .addGap(295, 295, 295)
+                .addGap(297, 297, 297)
                 .addComponent(Login, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE)
-                .addGap(60, 60, 60))
+                .addGap(58, 58, 58))
         );
 
         jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, -10, 450, 780));

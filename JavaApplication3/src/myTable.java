@@ -81,6 +81,9 @@ public void addRow() {
         jSeparator8 = new javax.swing.JSeparator();
         jSeparator9 = new javax.swing.JSeparator();
         jLabel17 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        grades = new javax.swing.JTextField();
+        jSeparator10 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -419,6 +422,26 @@ public void addRow() {
         jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icon/NU_shield.svg.png"))); // NOI18N
         jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 470, 260, 290));
 
+        jLabel21.setFont(new java.awt.Font("Rockwell Condensed", 1, 36)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel21.setText("Grades:");
+        jPanel3.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 500, 110, -1));
+
+        grades.setBackground(new java.awt.Color(72, 86, 101));
+        grades.setFont(new java.awt.Font("Segoe UI", 0, 48)); // NOI18N
+        grades.setForeground(new java.awt.Color(255, 255, 255));
+        grades.setBorder(null);
+        grades.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gradesActionPerformed(evt);
+            }
+        });
+        jPanel3.add(grades, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 480, 140, 60));
+
+        jSeparator10.setBackground(new java.awt.Color(255, 255, 255));
+        jSeparator10.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel3.add(jSeparator10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 540, 140, 10));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -455,8 +478,9 @@ public void addRow() {
         String Nationality = nationality.getText();
         String Sex = sex.getText();
         String Religion = religion.getText();
+        String Grades= grades.getText();
         
- if (Name.isEmpty() || Email.isEmpty() || Id.isEmpty() || Course.isEmpty() || Address.isEmpty() || Contact.isEmpty() || Nationality.isEmpty() || Sex.isEmpty() || Religion.isEmpty() ) {
+ if (Name.isEmpty() || Email.isEmpty() || Id.isEmpty() || Course.isEmpty() || Address.isEmpty() || Contact.isEmpty() || Nationality.isEmpty() || Sex.isEmpty() || Religion.isEmpty()|| Grades.isEmpty() ) {
             JOptionPane.showMessageDialog(this, "Please enter all fields", "Try again", JOptionPane.ERROR_MESSAGE);
          
     }else{ Object[] rowData = {
@@ -468,7 +492,9 @@ public void addRow() {
         Contact,
         Nationality,
         Sex,
-        Religion
+        Religion,
+        Grades
+        
     };
      DataStore.dataRows.add(rowData);
 }
@@ -488,6 +514,10 @@ public void addRow() {
         catch(Exception e){
         }
     }//GEN-LAST:event_jLabel20MouseClicked
+
+    private void gradesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gradesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_gradesActionPerformed
 
     /**
      * @param args the command line arguments
@@ -514,6 +544,7 @@ public void addRow() {
     private javax.swing.JTextField contact;
     private javax.swing.JTextField course;
     private javax.swing.JTextField email;
+    private javax.swing.JTextField grades;
     private javax.swing.JTextField id;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -528,6 +559,7 @@ public void addRow() {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -539,6 +571,7 @@ public void addRow() {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
